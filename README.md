@@ -1,2 +1,2 @@
-# python_kivy
-kivy project
+# python_selenium
+Selenium project
