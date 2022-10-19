@@ -18,3 +18,5 @@ Description:
   <li>https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/</li>
   <li>https://blog.finxter.com/how-to-solve-webdriverexception-message-geckodriver-executable-needs-to-be-in-path/</li>
   <li>https://stackoverflow.com/questions/44582329/firefox-webdriver-error</li>
+  <li>https://stackoverflow.com/questions/72773206/selenium-python-attributeerror-webdriver-object-has-no-attribute-find-el</li>
+  <li>https://stackoverflow.com/questions/14564539/selenium-webdriver-sendkeys-using-python-and-firefox</li>
