@@ -9,6 +9,7 @@ Description:
 
 <h3>Resources used: </h3>
 <ul>
+<li>https://pypi.org/project/selenium/</li>
   <li>https://www.youtube.com/watch?v=Xjv1sY630Uc</li>
   <li>https://chromedriver.storage.googleapis.com/index.html?path=106.0.5249.61/</li>
   <li>https://chromedriver.chromium.org/downloads</li>
