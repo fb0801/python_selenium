@@ -4,7 +4,7 @@ Selenium project
 
 # Description:
 
-
+Projects for learning selenium
 
 
 # Resources used:

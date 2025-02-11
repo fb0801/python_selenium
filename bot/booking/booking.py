@@ -27,4 +27,7 @@ class Booking:
                 'button[data-tooltip-text="Choose your currency"]'
         )
         currency_element.click()
+        selected_currency_element = self.find_element(By.CSS_SELECTOR,
+            'a[data-modal-header-async-url-param*="selected_currency=USD"]'                                              
+        )
         
