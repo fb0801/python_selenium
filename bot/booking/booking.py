@@ -58,3 +58,16 @@ class Booking:
                f'td[data-date="{check_out_date}"]'
         )
         check_out_element.click()
+
+    def select_adults(self, count):
+        selection_element = self.browser.find_element(By.ID, 'xp__guests__toggle')
+        selection_element.click()
+
+        while True:
+            decrease_adults_element = self.browser.find_element(By.CSS_SELECTOR, 
+                'button[aria-label="Decrease number of Adults"]'
+            )
+            decrease_adults_element.click()
+
+            adults_value_element = self.browser.find_element(By.ID, 'group_adults')
+            adults_value_element.get_attribute('value')
