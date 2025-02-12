@@ -41,3 +41,4 @@ class Booking:
     def select_place_to_go(self, place_to_go):
         search_feild = self.driver.find_element(By.ID, 'ss')
         search_feild.clear()
+        search_feild.send_keys(place_to_go)
