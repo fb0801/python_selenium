@@ -3,6 +3,7 @@ import booking.constants as const
 import os
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from booking.booking_filtrations import BookingFiltration
 
 
 class Booking:
@@ -87,3 +88,6 @@ class Booking:
             'button[type="submit"]'                                  
         )
         search_button.click()
+
+    def apply_filtrations(self):
+        filtration = BookingFiltration(driver=self)
