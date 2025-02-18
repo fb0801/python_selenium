@@ -70,4 +70,14 @@ class Booking:
             decrease_adults_element.click()
 
             adults_value_element = self.browser.find_element(By.ID, 'group_adults')
-            adults_value_element.get_attribute('value')
+            adults_value = adults_value_element.get_attribute(
+                'value') #give adult count
+            if int(adults_value) == 1:
+                break
+
+        increase_button_element = self.find_element(By.CSS_SELECTOR,
+            'button[aria-label="Increase number of adults"]' 
+        )
+
+        for i in range(count - 1):
+            increase_button_element.click()
