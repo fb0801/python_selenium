@@ -79,5 +79,11 @@ class Booking:
             'button[aria-label="Increase number of adults"]' 
         )
 
-        for i in range(count - 1):
+        for _ in range(count - 1):
             increase_button_element.click()
+
+    def click_search(self):
+        search_button = self.find_element(By.CSS_SELECTOR,
+            'button[type="submit"]'                                  
+        )
+        search_button.click()
