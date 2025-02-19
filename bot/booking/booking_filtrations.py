@@ -8,7 +8,7 @@ class BookingFiltration:
     def __init__(self, drvier:WebDriver):
         self.driver = drvier
 
-    def apply_star_rating(self, *star_value):
+    def apply_star_rating(self, *star_values):
         star_filtration_box = self.driver.find_element(By.CSS_SELECTOR,
             'filter_class'                                  
         )
@@ -16,6 +16,7 @@ class BookingFiltration:
             '*'
         )
         
-        for star_element in star_child_elements:
-            if (star_element.get_attribute("innerHTML")).strip() == f'{star_value} stars':
-                star_element.click()
+        for star_value in star_values:
+            for star_element in star_child_elements:
+                if (star_element.get_attribute("innerHTML")).strip() == f'{star_value} stars':
+                    star_element.click()
