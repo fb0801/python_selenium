@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from booking.booking_filtrations import BookingFiltration
 
 
-class Booking:
+class Booking(webdriver.Firefox):
     def __init__(self, teardown=False):
         
         self.teardown = teardown
