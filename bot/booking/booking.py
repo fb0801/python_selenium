@@ -13,6 +13,8 @@ class Booking(webdriver.Firefox):
         self.browser = webdriver.Firefox()
         self.browser.implicitly_wait(15)  # Apply implicit wait
         self.browser.maximize_window()  # Maximize browser window
+        options =  webdriver.FirefoxOptions()
+        options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
     
 

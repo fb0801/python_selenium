@@ -13,4 +13,7 @@ try:
         bot.apply_filtrations()
 
 except Exception as e:
-    print("There was a issue running this application")
+    if 'in PATH' in str(e):
+        print("There was a issue running this application")
+    else:
+        raise
