@@ -100,7 +100,6 @@ class Booking(webdriver.Firefox):
     def report_results(self):
         
         hotel_boxes = self.browser.find_element(By.ID, 'hotellist_inner'
-        ).find_elements(By.CLASS_NAME,
-        'sr_property_block')
+        )
       
         report = BookingReport(hotel_boxes)
