@@ -103,3 +103,4 @@ class Booking(webdriver.Firefox):
         )
       
         report = BookingReport(hotel_boxes)
+        report.pull_titles()
