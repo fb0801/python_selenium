@@ -13,7 +13,8 @@ class BookingReport:
         return self.boxes_section_element.find_elements(By.CLASS_NAME,
          'sr_property_block')
     
-    def pull_titles(self):
+    def pull_deal_box_attributes(self):
+        collection = []
         #pull hotel name
         for deal_box in self.deal_boxes:
             hotel_name = deal_box.find_element(By.CLASS_NAME,
@@ -23,4 +24,8 @@ class BookingReport:
             hotel_score = deal_box.get_attribute(
                 'data-score'
             ).strip()
-            
+
+            collection.append(
+                [hotel_name, hotel_price, hotel_score]
+            )
+        return collection
