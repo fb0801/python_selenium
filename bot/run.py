@@ -11,6 +11,7 @@ try:
         bot.select_adults(1)
         bot.click_search()
         bot.apply_filtrations()
+        bot.refresh()
         bot.report_results()
 
 except Exception as e:
