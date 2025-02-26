@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from booking.booking_filtrations import BookingFiltration
 from booking.booking_report import BookingReport
-
+from prettytable import PrettyTable
 
 class Booking(webdriver.Firefox):
     def __init__(self, teardown=False):
@@ -103,4 +103,8 @@ class Booking(webdriver.Firefox):
         )
       
         report = BookingReport(hotel_boxes)
-        report.pull_deal_box_attributes()
+        table = PrettyTable(
+            field_names =["Hotel Name", "Hotel Price", "Hotel Score"]
+        )
+        table.add_rows(report.pull_deal_box_attributes())
+        print(table)
